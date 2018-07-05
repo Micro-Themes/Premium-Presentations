@@ -1,0 +1,55 @@
+.markers_container {
+	width:inherit;
+	height:inherit;	
+}
+
+.marker { 
+	width:35px; 
+	height:35px; 
+	cursor:move; 
+	 /*background:url(../img/draggable.png) no-repeat; 
+	 z-index:100;*/
+	 position:absolute !important;
+}
+
+.marker:hover {
+	/*border:1px dotted red;*/	
+}
+
+.marker p {
+	text-align:center;
+	font-weight:bold;
+	color:white;
+	/*font-size:18px;*/	
+	/*text-transform:uppercase;*/
+	margin:0 auto;
+	/*padding:20% 0 0;*/
+	line-height:1em !important;
+}
+
+
+.circleBase {
+    border-radius: 999px 999px 999px 999px;
+}
+
+.circle {
+    border-radius:999px;
+}
+
+.square {
+    border-radius: 0px;
+}
+
+.icon {
+    background-repeat:no-repeat;
+	background-position:center center;
+}
+
+.type2 {
+    background: none repeat scroll 0 0 #416f96;
+    /*border: 1px solid #069;*/
+}
+
+.type2:hover {
+    background: none repeat scroll 0 0 red;
+}

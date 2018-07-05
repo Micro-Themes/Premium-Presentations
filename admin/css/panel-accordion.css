@@ -1,0 +1,73 @@
+.accordion_container {
+	margin:0 0 10px;	
+	padding-right:10px;
+}
+
+.wp-core-ui .button-primary {
+	text-shadow:none !important;	
+}
+
+.ui-accordion .ui-accordion-header {
+	margin-bottom:0px;	
+}
+
+.accordion_container .delete {
+    background:linear-gradient(to bottom, #d70303, #c32a2a);
+    border-color: #EE2121;
+}
+
+.accordion_container .delete:hover {
+    background-image:linear-gradient(to bottom, #ff4444, #c32a2a);
+	border:1px solid white;
+    border-color: #EE2121;
+}
+
+.panel-icon-plus {
+	margin-right:20px;	
+}
+
+.delete_panel_btn {
+	font-size:14px !important;	
+}
+
+.panel_container {
+	font-family:Arial;
+	font-size:14px !important;		
+}
+
+.panel_container .title {
+    display: block;
+    float: left;
+    font-family: sans-serif;
+    font-size: 12px;
+    width: 250px;
+}
+
+.panel_container > div {
+    clear: left;
+    margin: 15px auto;
+    overflow: hidden;
+}
+
+.panel_container > div input[type="text"] {
+    margin-right:10px;
+}
+
+label {
+    cursor: pointer;
+}
+
+.delete_panel_container {
+	overflow:hidden;
+	margin:10px 0;	
+}
+
+.panel_desc_text {
+	width:600px;
+	height:250px !important;	
+}
+
+.marker_tooltip_text {
+	width:600px;
+	height:70px !important;	
+}

@@ -1,0 +1,321 @@
+@charset "utf-8";
+/* CSS Document */
+
+#pm_marker_tooltip {
+	font-size:13px;
+	font-family:Arial, Helvetica, sans-serif;
+	line-height:20px;
+	width:200px;
+	height:auto;
+	padding:10px;
+	background-color:rgb(255,255,255);
+	opacity:.9;
+	border:1px solid #CCC;
+	border-radius:6px;
+	position:absolute;
+	z-index:9999;
+}
+
+.pm_back_to_top {
+    float: right;
+    height: auto;
+    margin: 15px 10px 0 0;
+    text-align: center;
+    width: 20px;
+	transition:all 0.3s ease 0s;
+}
+
+.pm_back_to_top_absolute {
+	position:absolute;
+	top:0px;
+	right:0px;	
+    height: auto;
+    margin:5px;
+    text-align: center;
+    width: 20px;
+	transition:all 0.3s ease 0s;
+}
+
+.pm_back_to_top:hover, .pm_back_to_top_absolute:hover {
+	cursor:pointer;
+	transform:scale(1.5)
+}
+
+.pm_floorplan_container {
+	position:relative;
+	/*width:680px;  this can be changed per project */
+	height:auto;/* this can be changed per project if needed */
+	margin-bottom:20px;
+	/*border:1px solid black;*/
+}
+
+.pm_floorplan_marker {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:9999;	
+	width:30px;
+	height:30px;
+	text-align:center;
+}
+
+.pm_animate {
+	/*border-radius:50%;*/
+	content:"";
+	-moz-box-sizing:content-box;
+	
+	transform: scale(1);
+	transition:all 0.3s ease 0s;
+	-moz-transition:all 0.3s ease 0s;
+	-webkit-transition:all 0.3s ease 0s;
+	-o-transition:all 0.3s ease 0s;
+	
+}
+
+.pm_animate:hover {
+	transform: scale(1.4) !important;
+	-webkit-transform: scale(1.4) !important;
+}
+
+.pm_floorplan_marker:hover {
+	cursor:pointer;
+}
+
+.pm_floorplan img {
+	max-width:100%;
+	/*width:100%;*/
+}
+
+.pm_floorplan_marker p {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+	font-family:Arial, Helvetica, sans-serif;
+	line-height:1em !important;
+	margin:0 !important;
+}
+
+.pm_interface_controls {
+	/*height:30px;*/
+	/*width:680px;*/
+	padding-bottom:10px;
+	overflow:hidden;	
+	border-bottom:1px dotted #AAAAAA;
+	margin-bottom:20px;
+}
+
+.pm_interface_controls a {
+	font-family:Arial, Helvetica, sans-serif;	
+	font-size:14px;
+	display:inline;
+}
+
+#pm_show_all_btn {
+	display:block;	
+	float:left;
+}
+
+#pm_hide_all_btn {
+	display:none;	
+	float:left;
+}
+
+.pm_sort_btns {
+	float:right;
+	/*width:247px;*/
+	height:auto;
+	display:none;	
+}
+
+
+.pm_markers_container {
+	width:inherit;
+	height:inherit;
+	/*position:absolute;*/
+	top:0;
+	left:0;
+	z-index:500;	
+}
+
+/* Info Panels */
+.pm_panels_container {
+	width:680px; /* this can be changed per project */
+	height:auto;/* this can be changed per project */
+	/*border:1px solid black;*/
+	position:relative;
+	font-family:Arial, Helvetica, sans-serif;	
+	font-size:14px;
+	min-height:300px;
+}
+
+.pm_panel {
+	width:inherit;
+	height:inherit;
+	/*border:1px solid red;
+	position:absolute;
+	top:0;
+	left:0;*/
+	overflow:hidden;
+	margin-bottom:20px;
+	display:none;
+	
+}
+
+.pm_panel.pm_panel_responsive {
+	display:inherit;
+}
+
+.pm_floorplan_responsive {
+	width:100% !important;	
+}
+
+.pm_panel.full {
+	width:inherit;
+	height:inherit;
+	/*border:1px solid red;*/
+	overflow:hidden;
+	margin-bottom:20px;
+	display:block;
+	position:relative;
+}
+
+.pm_panel.active {
+	display:block;	
+}
+
+.pm_section {
+	width:400px;
+	height:230px;;
+	/*background-color:red;*/
+}
+
+.pm_section img {
+	border-radius: 0px !important;
+    box-shadow:none !important;
+	width:100%;
+}
+
+.pm_section_info {
+	width:280px;
+	height:230px;
+	background-color:#eee;
+}
+
+.pm_left {
+	float:left;	
+}
+
+.pm_right {
+	float:right;	
+}
+
+.pm_full_width {
+	width:100% !important;	
+}
+
+.pm_section_info ul {
+	list-style:none !important;
+	margin:0 !important;
+	padding:15px;	
+}
+
+.pm_section_info ul li {
+	margin:0 0 15px 0 !important;	
+	clear:left;
+	/*overflow:hidden;*/
+	font-size:12px;
+	line-height:26px !important;
+	list-style:none !important;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.pm_section_info ul li p {
+	line-height:26px !important;	
+	margin:10px 0 10px 0 !important;
+}
+
+.pm_section_info ul li[id*="panel_info"] {
+	padding-top:10px;
+}
+
+.pm_section_info ul li .marker {
+	height:35px;
+	width:35px;
+	text-align:center;
+	float:left;
+	margin-right:7px;
+	/*background-color:#006699;
+	border-radius:999px;*/
+}
+
+.pm_section_info ul li .marker p {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+	margin:0 !important;
+	line-height:1em !important;
+}
+
+.pm_section_info ul li .section {
+	float:left;
+	font-size:14px;
+	line-height:16px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.circle {
+    border-radius:999px;
+}
+
+.square {
+    border-radius: 0px;
+}
+
+.icon {
+    background-repeat:no-repeat;
+	background-position:center center;
+}
+
+/*** Google map ***/
+.panel_google_map_title {
+    background-color: #CCCCCC;
+    clear: both;
+    overflow: hidden;
+    padding: 10px;
+	
+	transition:all 0.5s ease 0s;
+	-moz-transition:all 0.5s ease 0s;
+	-ms-transition:all 0.5s ease 0s;
+	-o-transition:all 0.5s ease 0s;
+}
+
+.panel_google_map_title:hover {
+	cursor:pointer;	
+	background-color:#333 !important;
+	color:white !important;
+}
+
+.panel_google_map_title.active {
+	background-color:#333;
+	color:white;	
+}
+
+.panel_block {
+	height:0px;
+	/*transition:all 0.5s ease 0s;
+	-moz-transition:all 0.5s ease 0s;
+	-ms-transition:all 0.5s ease 0s;
+	-o-transition:all 0.5s ease 0s;*/
+}
+
+.map_canvas {
+	width:100%;
+}
+
+.map_canvas > div {
+	font-size:0px;	
+	
+}
+.gm-style-iw {
+	overflow:hidden !important;
+}

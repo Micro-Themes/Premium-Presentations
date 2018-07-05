@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+
+.pm-wrap {
+	padding:10px 0 0 10px;
+}
+
+#floorplan_container {
+	margin:0 0 10px 0;
+	border:1px solid black;
+	overflow:hidden;
+	position:relative;
+}
